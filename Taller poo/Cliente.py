@@ -25,7 +25,7 @@ class Cliente:
     
     #Se crean los metodos normales de la clase
     def tomar_datos(self):
-        self.nombre_cliente=input("digite el apellido del cliente: ")
+        self.nombre_cliente=input("digite el nombre del cliente: ")
         self.apellido_cliente=input("digite el apellido del cliente: ")
     
     def procesar_datos(self):
@@ -33,3 +33,6 @@ class Cliente:
     
     def mostrar_info_cliente(self):
         print(f"Nombre Cliente: {self.nombre_cliente} - Apellido  cliente: {self.apellido_cliente}")
+        
+    def hacer_saludo(self, datoSaludo):
+        print(f"{datoSaludo}: {self.nombre_cliente} {self.apellido_cliente}")
